@@ -1,0 +1,80 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+       classpath 'com.android.tools.build:gradle:2.0.0'
+    }
+}
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile files('libs/gson-2.2.2.jar')
+    compile files('libs/ksoap2-android-assembly-3.4.0-jar-with-dependencies.jar ')
+    compile files('libs/notification-hubs-0.4.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/GraphView-4.0.1.jar')
+    compile 'com.google.android.gms:play-services-base:6.5.87'
+    compile 'com.microsoft.azure:azure-notifications-handler:1.0.1@aar'
+
+    repositories {
+        maven {
+            url "http://dl.bintray.com/microsoftazuremobile/SDK"
+        }
+    }
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    defaultConfig {
+        minSdkVersion 14
+        multiDexEnabled = true
+    }
+
+    dexOptions {
+        preDexLibraries = false
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    afterEvaluate {
+        tasks.matching {
+            it.name.startsWith('dex')
+        }.each { dx ->
+            if (dx.additionalParameters == null) {
+                dx.additionalParameters = ['--multi-dex']
+            } else {
+                dx.additionalParameters += '--multi-dex'
+            }
+        }
+    }
+
+    productFlavors {
+    }
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appolissupport"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.example.appolissupport.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.appolissupport.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_support"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="com.support.main.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.support.main.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.main.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Register Company"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.main.RegisterSuperUserActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Create Super User"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.main.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.main.SuperUserActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Super User Tools"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name="com.support.main.CaseService"
+            android:exported="false" />
+
+        <receiver android:name="com.support.receivers.ScheduleReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.microsoft.windowsazure.notifications.NotificationsBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.appolissupport" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.support.main.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="com.support.superuser.SuperSupportUserActivity"
+            android:label="Support Team"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.superuser.SuperDepartmentActivity"
+            android:label="Departments"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.superuser.SuperSeverityActivity"
+            android:label="Severities"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.superuser.SuperAreaActivity"
+            android:label="Areas"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.superuser.SuperStatusActivity"
+            android:label="Statuses"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.support.superuser.SuperClientUserActivity"
+            android:label="Clients and Users"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.superuser.SuperSettingsActivity"
+            android:label="Settings"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.support.main.ResetPasswordActivity"
+            android:label="Reset Password"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

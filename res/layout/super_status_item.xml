@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSuperStatus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="47dp"
+        android:src="@drawable/drag"
+        android:layout_marginRight="5dp"/>
+    <EditText
+        android:id="@+id/et_super_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/Black"
+        android:background="@drawable/appolis_gray5"
+        android:text="Main Warehouse"
+        android:textSize="12sp"/>
+    <Spinner
+        android:id="@+id/sp_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </Spinner>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <ImageButton
+            android:id="@+id/btn_super_trash"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trash"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+CHANGED,C:\Users\Jeffery\AndroidStudioProjects\Support\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\support\fragments\PendingFragment$DepartmentAsyncCall$override.class
+CHANGED,C:\Users\Jeffery\AndroidStudioProjects\Support\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\support\fragments\PendingFragment$AreaDropAsyncCallWS2$override.class
+CHANGED,C:\Users\Jeffery\AndroidStudioProjects\Support\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\support\fragments\PendingFragment$override.class
+CHANGED,C:\Users\Jeffery\AndroidStudioProjects\Support\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\support\fragments\PendingFragment$SeverityDropAsyncCallWS2$override.class
+CHANGED,C:\Users\Jeffery\AndroidStudioProjects\Support\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\support\fragments\PendingFragment$1$override.class
+CHANGED,C:\Users\Jeffery\AndroidStudioProjects\Support\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\support\fragments\PendingFragment$2$override.class
+CHANGED,C:\Users\Jeffery\AndroidStudioProjects\Support\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\support\fragments\PendingFragment$PendingAttachmentAsync$override.class
+CHANGED,C:\Users\Jeffery\AndroidStudioProjects\Support\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

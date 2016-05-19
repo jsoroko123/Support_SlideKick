@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:id="@+id/linear"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<TextView
+		android:id="@+id/tvNoPendingCases"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:text="No Pending Cases Found"
+		android:textSize="20dp"
+		android:layout_marginTop="25dp"
+		android:visibility="gone"
+		android:textColor="@color/GrayAppolis"
+		android:layout_gravity="center_horizontal" />
+
+	<ListView android:id="@+id/list_pending_cases"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:listSelector="@drawable/list_selector"
+		android:choiceMode="singleChoice"
+		android:divider="@null"
+		android:dividerHeight="0dp"
+		android:clickable="true"/>
+
+
+</LinearLayout>

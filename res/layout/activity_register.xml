@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_weight="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/Black"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/GrayAppolis"
+                    android:textSize="14sp"
+                    android:text="Company Name: "/>
+                <EditText
+                    android:id="@+id/et_company_name"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:layout_height="30dp"
+                    android:background="@drawable/appolis_gray5"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/Black"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/GrayAppolis"
+                    android:textSize="14sp"
+                    android:text="Address: "/>
+                <EditText
+                    android:id="@+id/et_company_address"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:layout_height="30dp"
+                    android:background="@drawable/appolis_gray5"
+                    android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/Black"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/GrayAppolis"
+                    android:textSize="14sp"
+                    android:text="City: "/>
+                <EditText
+                    android:id="@+id/et_company_city"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:layout_height="30dp"
+                    android:background="@drawable/appolis_gray5"
+                    android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="3"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/Black"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/GrayAppolis"
+                        android:textSize="14sp"
+
+                        android:text="State: "/>
+                    <EditText
+                        android:id="@+id/et_company_state"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:imeOptions="actionNext"
+                        android:layout_height="30dp"
+                        android:maxLength="2"
+                        android:background="@drawable/appolis_gray5"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/Black"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_weight="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="@color/GrayAppolis"
+                        android:textSize="14sp"
+                        android:text="Zip Code: "/>
+                    <EditText
+                        android:id="@+id/et_company_zip"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:imeOptions="actionNext"
+                        android:layout_height="30dp"
+                        android:background="@drawable/appolis_gray5"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/Black"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/GrayAppolis"
+                    android:textSize="14sp"
+                    android:text="Company Email: "/>
+                <EditText
+                    android:id="@+id/et_company_email"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:layout_height="30dp"
+                    android:background="@drawable/appolis_gray5"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/Black"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/GrayAppolis"
+                    android:textSize="14sp"
+                    android:text="Company Phone: "/>
+                <EditText
+                    android:id="@+id/et_company_phone"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:inputType="phone"
+                    android:imeOptions="actionDone"
+                    android:layout_height="30dp"
+                    android:background="@drawable/appolis_gray5"
+                    android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Gray00"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_gray_button"
+            android:layout_marginRight="15dp"
+
+            android:text="Cancel"/>
+        <Button
+            android:id="@+id/bt_next_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/background_gray_button"
+
+            android:text="Next"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+  

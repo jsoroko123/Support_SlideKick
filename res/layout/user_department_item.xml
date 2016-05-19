@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llUserDepartment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_user_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="left"
+        android:text="Production"
+        android:padding="3dp"
+        android:textColor="@color/Black" />
+
+        <CheckBox
+            android:id="@+id/chk_user_department"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"></CheckBox>
+</LinearLayout>

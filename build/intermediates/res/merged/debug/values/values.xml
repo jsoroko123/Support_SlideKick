@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <color name="AppBlue">#C6D8E5</color>
+    <color name="BarrierVertical">#809C9C9C</color>
+    <color name="Black">#000000</color>
+    <color name="Black10">#252525</color>
+    <color name="Black11">#48000000</color>
+    <color name="Black12">#CC000000</color>
+    <color name="Black13">#333333</color>
+    <color name="Black14">#4D4D4D</color>
+    <color name="Black2">#353535</color>
+    <color name="BlackTextView">#2e2e2e</color>
+    <color name="Blue">#073e7e</color>
+    <color name="Blue0c">#0c306e</color>
+    <color name="Blue1">#066293</color>
+    <color name="Blue10">#0C7BA3</color>
+    <color name="Blue11">#005173</color>
+    <color name="Blue12">#3E71D7</color>
+    <color name="Blue13">#365DA6</color>
+    <color name="Blue17">#3279BD</color>
+    <color name="Blue18">#2196F3</color>
+    <color name="Blue19">#33C0F4</color>
+    <color name="Blue9">#094962</color>
+    <color name="BlueLink">#157efb</color>
+    <color name="BlueSupporter">#699ad7</color>
+    <color name="Bluevna1">#156192</color>
+    <color name="DarkOrange1">#FF7F00</color>
+    <color name="DeepSkyBlue4">#00688B</color>
+    <color name="DeepSkyBlue5">#006666</color>
+    <color name="DodgerBlue3">#1874CD</color>
+    <color name="Gold1">#FFD700</color>
+    <color name="Gray00">#d0d0d0</color>
+    <color name="Gray11">#1C1C1C</color>
+    <color name="Gray12">#E1E1E1</color>
+    <color name="Gray13">#E9E9E9</color>
+    <color name="Gray21">#f3f3f3</color>
+    <color name="Gray22">#F2F2F2</color>
+    <color name="Gray23">#F7F7F7</color>
+    <color name="Gray31">#4F4F4F</color>
+    <color name="Gray41">#696969</color>
+    <color name="Gray42">#716A6A</color>
+    <color name="Gray51">#828282</color>
+    <color name="Gray52">#858585</color>
+    <color name="Gray61">#9a9898</color>
+    <color name="Gray71">#70adc1</color>
+    <color name="Gray73">#D0D0D0</color>
+    <color name="Gray74">#DDDDDD</color>
+    <color name="Gray75">#DCDCDC</color>
+    <color name="Gray78">#787878</color>
+    <color name="Gray80">#808080</color>
+    <color name="Gray81">#CFCFCF</color>
+    <color name="Gray8c">#8c8c8c</color>
+    <color name="Gray91">#E8E8E8</color>
+    <color name="Gray92">#AAAAAA</color>
+    <color name="GrayAppolis">#8f8f8f</color>
+    <color name="GrayE5">#E5E5E5</color>
+    <color name="Green1">#31B81C</color>
+    <color name="Green2">#aee6d4</color>
+    <color name="Green5">#ddd5dad5</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="Orange">#d09b2c</color>
+    <color name="Orange1">#FFA500</color>
+    <color name="Orange2">#d8ad51</color>
+    <color name="Orange3">#AA7403</color>
+    <color name="Orange4">#c48b21</color>
+    <color name="Orange5">#AE5507</color>
+    <color name="Orange6">#CC6600</color>
+    <color name="Orange7">#974905</color>
+    <color name="OrangeAppolis">#FFD27F</color>
+    <color name="OrangeAppolisDisable">#945100</color>
+    <color name="Purple">#c151dd</color>
+    <color name="Red1">#e8534d</color>
+    <color name="Red2">#b9423d</color>
+    <color name="SkyBlue">#33B5E5</color>
+    <color name="TransBGWebview">#88888888</color>
+    <color name="TransListNomineeItem">#800090ff</color>
+    <color name="TransWebview">#44444444</color>
+    <color name="Yellow">#fff200</color>
+    <color name="Yellow1">#f6d224</color>
+    <color name="YellowDark">#f6d222</color>
+    <color name="YellowHeader">#D09B2B</color>
+    <color name="YellowLight">#e8d08e</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="blueBackground">#156192</color>
+    <color name="blueDeep">#032230</color>
+    <color name="blueDivider">#3968ac</color>
+    <color name="bluePress">#0d65cc</color>
+    <color name="blueSky">#1c6893</color>
+    <color name="blueSky1">#214c85</color>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <color name="green">#33CC33</color>
+    <color name="greyDF">#dfdfdf</color>
+    <color name="transBlack">#CC090909</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteD8">#d8d8d8</color>
+    <color name="whitef9">#f9f9f9</color>
+    <declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="metaButtonBarStyle"/><attr format="reference" name="metaButtonBarButtonStyle"/></declare-styleable>
+    <declare-styleable name="DragSortListView"><attr format="dimension" name="collapsed_height"/><attr format="float" name="drag_scroll_start"/><attr format="float" name="max_drag_scroll_speed"/><attr format="color" name="float_background_color"/><attr name="remove_mode"><enum name="clickRemove" value="0"/><enum name="flingRemove" value="1"/></attr><attr format="boolean" name="track_drag_sort"/><attr format="float" name="float_alpha"/><attr format="float" name="slide_shuffle_speed"/><attr format="integer" name="remove_animation_duration"/><attr format="integer" name="drop_animation_duration"/><attr format="boolean" name="drag_enabled"/><attr format="boolean" name="sort_enabled"/><attr format="boolean" name="remove_enabled"/><attr name="drag_start_mode"><enum name="onDown" value="0"/><enum name="onMove" value="1"/><enum name="onLongPress" value="2"/></attr><attr format="integer" name="drag_handle_id"/><attr format="integer" name="fling_handle_id"/><attr format="integer" name="click_remove_id"/><attr format="boolean" name="use_default_controller"/></declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="SwipeListView"><attr format="boolean" name="swipeOpenOnLongPress"/><attr format="integer" name="swipeAnimationTime"/><attr format="dimension" name="swipeOffsetLeft"/><attr format="dimension" name="swipeOffsetRight"/><attr format="boolean" name="swipeCloseAllItemsWhenMoveList"/><attr format="reference" name="swipeFrontView"/><attr format="reference" name="swipeBackView"/><attr format="enum" name="swipeMode"><enum name="none" value="0"/><enum name="both" value="1"/><enum name="right" value="2"/><enum name="left" value="3"/></attr><attr format="enum" name="swipeActionLeft"><enum name="reveal" value="0"/><enum name="dismiss" value="1"/><enum name="choice" value="2"/></attr><attr format="enum" name="swipeActionRight"><enum name="reveal" value="0"/><enum name="dismiss" value="1"/><enum name="choice" value="2"/></attr><attr format="reference" name="swipeDrawableChecked"/><attr format="reference" name="swipeDrawableUnchecked"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="create_new_message_item_padding">10dp</dimen>
+    <dimen name="domain_label_font_size">12dp</dimen>
+    <dimen name="domain_tick_label_font_size">12dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="legend_text_font_size">12dp</dimen>
+    <dimen name="list_item_height">48dip</dimen>
+    <dimen name="list_text_size">16sp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="range_label_font_size">12dp</dimen>
+    <dimen name="range_tick_label_font_size">12dp</dimen>
+    <dimen name="title_font_size">16dp</dimen>
+    <item name="click_remove" type="id"/>
+    <item name="drag_handle" type="id"/>
+    <item name="fgelv_tag_changed_visibility" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="webview" type="id"/>
+    <integer name="google_play_services_version">6587000</integer>
+    <string name="action_example"/>
+    <string name="action_logout">Log Out</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_severity_add">Add</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="app_name">SlideKick</string>
+    <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
+    <string name="common_android_wear_update_text">This app won\'t run unless you update the Android Wear app.</string>
+    <string msgid="6006316683626838685" name="common_android_wear_update_title">Update Android Wear</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet">This app won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">This app won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="plus_disconnect">Disconnect from Google+</string>
+    <string name="plus_sign_out">Switch Google+ account</string>
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="title_activity_case_details">Case Details</string>
+    <string name="title_activity_details_fragment">DetailsFragment</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_section1">Statistics</string>
+    <string name="title_section10">Profile</string>
+    <string name="title_section12">Time Log</string>
+    <string name="title_section2">Support Cases</string>
+    <string name="title_section3">Create Support Case</string>
+    <string name="title_section4">Errors</string>
+    <string name="title_section5">Clients</string>
+    <string name="title_section6">Users</string>
+    <string name="title_section7">Pending Cases</string>
+    <string name="title_section8">Case for Client</string>
+    <string name="title_section9">Support Team</string>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowBackground">@drawable/appolis_gray</item>
+    </style>
+    <style name="AppTheme" parent="android:Theme.NoTitleBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+    <style name="SplashTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+</resources>

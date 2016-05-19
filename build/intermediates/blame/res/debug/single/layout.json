@@ -1,0 +1,294 @@
+[
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_list_view.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_list_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_reset.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialog_reset.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\support_time_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\support_time_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_navigation_drawer.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner7.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner7.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_progressbar.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialog_progressbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner_time.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_row.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\spinner_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item5.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\spinner_item5.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_pending.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_pending.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_errors.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_errors.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\department_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\department_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item6.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\spinner_item6.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_cases.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_cases.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_navigation.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\list_item_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\case_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\case_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner11.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner11.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner10.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner10.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\details_item4.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\details_item4.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\client_user_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\client_user_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\text_view.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\text_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\area_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\area_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item7.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\spinner_item7.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_super_area.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_super_area.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_submit.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_submit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\severity_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\severity_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\users_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\users_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner3.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner9.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner9.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\row.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\row.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_super_support_user.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_super_support_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_super_user.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_register_super_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item4.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\spinner_item4.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\status_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\status_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner6.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner6.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\pending_case_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\pending_case_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\parent_client_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\parent_client_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_support_time.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_support_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\group_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\group_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_super_settings.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_super_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_case_details.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_case_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item3.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\spinner_item3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_super_severity.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_super_severity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_details_fragment.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_details_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner4.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner4.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\super_status_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\super_status_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_super_client_user.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_super_client_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item2.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\spinner_item2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_super_department.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_super_department.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset_password.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_reset_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\details_item3.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\details_item3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\child_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\child_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_super_status.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_super_status.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\details_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\details_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner8.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner8.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_super_user.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_super_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\user_department_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\user_department_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner5.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner5.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_clients.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_clients.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\dialogscanner.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\dialogscanner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_support_users.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\fragment_support_users.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\details_item2.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\details_item2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\attach_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\attach_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\layout\\spinner_item.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\layout\\spinner_item.xml"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\drawable\\common_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\drawable\\common_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\drawable\\common_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\drawable\\common_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\drawable\\common_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\drawable\\common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\drawable\\common_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\drawable\\common_signin_btn_text_dark.xml"
+    }
+]

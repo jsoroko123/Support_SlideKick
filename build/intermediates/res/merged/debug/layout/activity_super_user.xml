@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo123"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_edit_case_types"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_gray_button2"
+
+        android:text="Departments"/>
+    <Button
+        android:id="@+id/btn_edit_case_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_gray_button2"
+        android:text="Areas"/>
+    <Button
+        android:id="@+id/btn_edit_severity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_gray_button2"
+        android:text="Severities"/>
+    <Button
+        android:id="@+id/btn_edit_statuses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_gray_button2"
+        android:text="Statuses"/>
+    <Button
+        android:id="@+id/btn_add_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_gray_button2"
+        android:text="Support Team"/>
+    <Button
+        android:id="@+id/btn_add_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_gray_button2"
+        android:text="Clients and Users"/>
+    <Button
+        android:id="@+id/btn_additonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_gray_button2"
+        android:text="Additional Settings"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

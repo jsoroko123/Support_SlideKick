@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.support.main.MainActivity$PlaceholderFragment" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/lv_users_clients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+    </ListView>
+
+        <ExpandableListView android:id="@+id/lv_expand_client_user"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:dividerHeight="1dp"
+            android:visibility="gone"
+          />
+
+
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/circle"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"/>
+
+        <ImageView
+            android:id="@+id/img_add2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/circle2"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"/>
+
+    </FrameLayout>
+</RelativeLayout>

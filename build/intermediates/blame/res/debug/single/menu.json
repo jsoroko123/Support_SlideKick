@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\menu_severity.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\menu_severity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\case_details.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\case_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\main2.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\menu_login.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\menu_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\menu_details.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\menu_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\menu_splash.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\menu_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\global.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\global.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\build\\intermediates\\res\\merged\\debug\\menu\\status.xml",
+        "source": "C:\\Users\\Jeffery\\AndroidStudioProjects\\Support\\res\\menu\\status.xml"
+    }
+]
