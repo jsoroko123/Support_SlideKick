@@ -51,7 +51,7 @@
                android:gravity="center"
                android:text="Contact"
                 android:textColor="@color/white"
-               android:background="@color/Orange1"
+                android:background="@color/Purple"
                android:textSize="12sp" />
 
             <Button
@@ -71,7 +71,7 @@
                 android:layout_weight="1"
                 android:textSize="12sp"
                 android:textColor="@color/white"
-                android:background="@color/Purple"
+                android:background="@color/Orange1"
                 android:gravity="center"
                 android:text="Notes" />
     </LinearLayout>

@@ -17,6 +17,7 @@ import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.ImageButton;
@@ -274,11 +275,6 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 							new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface dialog, int id) {
 
-									InsertNewClient inc = new InsertNewClient(getActivity(), NEWCLIENTID, et1.getText().toString(), spm.getInt("CompanyID", 0), et2.getText().toString(),
-											et3.getText().toString(), et4.getText().toString(), et5.getText().toString(), et6.getText().toString(),
-											et7.getText().toString());
-									inc.execute();
-
 								}
 							})
 
@@ -293,8 +289,27 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 
 								}
 							});
-		AlertDialog alertDialog = alertDialogBuilder.create();
+		final AlertDialog alertDialog = alertDialogBuilder.create();
 		alertDialog.show();
+
+		Button b = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+		b.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				if(et1.getText().toString().isEmpty() || et2.getText().toString().isEmpty() || et3.getText().toString().isEmpty() ||
+						et4.getText().toString().isEmpty() || et5.getText().toString().isEmpty() || et6.getText().toString().isEmpty() ||
+						et7.getText().toString().isEmpty() || et8.getText().toString().isEmpty()) {
+					Utilities.ShowDialog("Warning!", "Please fill in required fields.", getActivity());
+				} else {
+					InsertNewClient inc = new InsertNewClient(getActivity(), NEWCLIENTID, et1.getText().toString(), spm.getInt("CompanyID", 0), et2.getText().toString(),
+							et3.getText().toString(), et4.getText().toString(), et5.getText().toString(), et6.getText().toString(),
+							et7.getText().toString());
+					inc.execute();
+					alertDialog.dismiss();
+				}
+
+			}
+		});
 	}
 
 
@@ -415,31 +430,7 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
 
-								int newClient = 0;
-								if (MainActivity.isSupport) {
-									if (showClients) {
-										if (clientSpinner.contains("Select Client")) {
-											Utilities.ShowDialog("Error", "Please Select Client", mContext);
-										} else {
-											newClient = clientSpinnerID;
-										}
-									} else {
-										newClient = clientSpinnerID;
-									}
-								} else {
-									newClient = spm.getInt("ClientID", 0);
-								}
 
-								InsertNewClientUser incu = new InsertNewClientUser(
-										getActivity(), newClient, et6.getText().toString(), et1.getText().toString(),
-										et2.getText().toString(), et3.getText().toString(),
-										et4.getText().toString(), et7.getText().toString(), et8.getText().toString(), et5.getText().toString(), s1.isChecked(), s2.isChecked(), s3.isChecked());
-								incu.execute();
-
-
-								ra = new RotateAnimation(ROTATE_TO, ROTATE_FROM, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-								ra.setDuration(1000);
-								imgAdd2.startAnimation(ra);
 
 							}
 						})
@@ -455,8 +446,63 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 
 							}
 						});
-		AlertDialog alertDialog = alertDialogBuilder.create();
+		final AlertDialog alertDialog = alertDialogBuilder.create();
 		alertDialog.show();
+
+		Button b = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+		b.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				int newClient = 0;
+				if ((et1.getText().toString().isEmpty() || et2.getText().toString().isEmpty() || et3.getText().toString().isEmpty() ||
+						et4.getText().toString().isEmpty() || et5.getText().toString().isEmpty() || et6.getText().toString().isEmpty() ||
+						et7.getText().toString().isEmpty() || et8.getText().toString().isEmpty()) || !clientSpinner.contains("Select Client")) {
+					Utilities.ShowDialog("Warning!", "Please fill in required fields.", getActivity());
+
+				} else {
+					if (MainActivity.isSupport) {
+						if (showClients) {
+							if (clientSpinner.contains("Select Client")) {
+								Utilities.ShowDialog("Error", "Please Select Client", mContext);
+							} else {
+								newClient = clientSpinnerID;
+								InsertNewClientUser incu = new InsertNewClientUser(
+										getActivity(), newClient, et6.getText().toString(), et1.getText().toString(),
+										et2.getText().toString(), et3.getText().toString(),
+										et4.getText().toString(), et7.getText().toString(), et8.getText().toString(), et5.getText().toString(), s1.isChecked(), s2.isChecked(), s3.isChecked());
+								incu.execute();
+								alertDialog.dismiss();
+							}
+						} else {
+							newClient = clientSpinnerID;
+							InsertNewClientUser incu = new InsertNewClientUser(
+									getActivity(), newClient, et6.getText().toString(), et1.getText().toString(),
+									et2.getText().toString(), et3.getText().toString(),
+									et4.getText().toString(), et7.getText().toString(), et8.getText().toString(), et5.getText().toString(), s1.isChecked(), s2.isChecked(), s3.isChecked());
+							incu.execute();
+							alertDialog.dismiss();
+						}
+					} else {
+						newClient = spm.getInt("ClientID", 0);
+						InsertNewClientUser incu = new InsertNewClientUser(
+								getActivity(), newClient, et6.getText().toString(), et1.getText().toString(),
+								et2.getText().toString(), et3.getText().toString(),
+								et4.getText().toString(), et7.getText().toString(), et8.getText().toString(), et5.getText().toString(), s1.isChecked(), s2.isChecked(), s3.isChecked());
+						incu.execute();
+						alertDialog.dismiss();
+					}
+
+
+
+
+
+
+					ra = new RotateAnimation(ROTATE_TO, ROTATE_FROM, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
+					ra.setDuration(1000);
+					imgAdd2.startAnimation(ra);
+				}
+			}
+		});
 
 	}
 
@@ -518,6 +564,8 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 
 		AlertDialog alertDialog = alertDialogBuilder.create();
 		alertDialog.show();
+
+
 	}
 
 

@@ -146,6 +146,8 @@
             android:minLines="1"
             android:maxLines="10"
             android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:textColor="@color/Black"
             android:textColorHint="#575656"
             android:textSize="14sp"/>

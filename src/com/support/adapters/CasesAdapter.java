@@ -159,11 +159,13 @@ public class CasesAdapter extends ArrayAdapter<SupportCases> {
 				if(MainActivity.isSupport) {
 					ArrayList<String> arr = new ArrayList<>();
 
-					String split = item.getPHONE();
+					String split = item.getPHONECOMBO();
 					String[] str = split.split("&");
 					String ext = "";
 
+					boolean isCompany;
 					for (String a : str) {
+						isCompany = false;
 						String append;
 						if (a.length() >= 10) {
 							if (a.contains("W")) {
@@ -175,18 +177,25 @@ public class CasesAdapter extends ArrayAdapter<SupportCases> {
 										ext = "";
 									}
 								}
+								isCompany = true;
 							} else if (a.contains("M")) {
 								append = "Mobile #: ";
 							} else {
+
 								append = "Company #: ";
 							}
 
 							String b = Utilities.stripNonDigits(a);
 							if (!b.isEmpty()) {
-								arr.add(append + Utilities.fmtPhone(b) + " " + ext);
+								if (isCompany) {
+									arr.add(append + Utilities.fmtPhone(b) + " " + ext);
+								} else {
+									arr.add(append + Utilities.fmtPhone(b));
+								}
 							}
 						}
 					}
+
 
 					CasesFragment cs = new CasesFragment();
 					cs.showPopUpForPhoneNumbers(getContext(), arr, item.getUsername());

@@ -51,8 +51,6 @@ public class PendingFragment extends Fragment implements OnItemClickListener {
 	private PendingCasesAdapter pendingCasesAdapter = null;
 	private TextView tvNoCases;
 	private SharedPreferenceManager spm;
-
-	private static ListView lvAttachList;
 	private ArrayList<CaseArea> listCaseReasons = new ArrayList<>();
 	private ArrayList<CaseSeverity> listSeverity = new ArrayList<>();
 	private ArrayList<CaseType> listCaseType = new ArrayList<>();
