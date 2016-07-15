@@ -110,6 +110,7 @@ public class SuperAreaActivity extends Activity {
     public void onBackPressed() {
         if(listAreas.size()>0) {
             SuperAreaAdapter.etDArea.clearFocus();
+            SuperAreaAdapter.etDArea.requestFocus();
             Area s = new Area(this, copy, listAreas, true, listCaseType.get(spinner.getSelectedItemPosition()).getCommentTypeID());
             s.execute();
         } else {
@@ -139,6 +140,7 @@ public class SuperAreaActivity extends Activity {
             case android.R.id.home:
                 if(listAreas.size()>0) {
                     SuperAreaAdapter.etDArea.clearFocus();
+                    SuperAreaAdapter.etDArea.requestFocus();
                     Area s = new Area(this, copy, listAreas, true, listCaseType.get(spinner.getSelectedItemPosition()).getCommentTypeID());
                     s.execute();
                 } else {

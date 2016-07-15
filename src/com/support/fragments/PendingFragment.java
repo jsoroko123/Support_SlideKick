@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.appolissupport.R;
 import com.support.adapters.CaseAreaAdapter;
@@ -38,6 +39,8 @@ import com.support.utilities.Utilities;
 
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.conn.ConnectTimeoutException;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
@@ -59,9 +62,10 @@ public class PendingFragment extends Fragment implements OnItemClickListener {
 	private int commentTypeID;
 	private int areaID;
 	private int severityID;
+	private int userID;
 	private String commentTitle, comments;
 	private static String tempCommentID;
-
+	boolean hasloaded;
 	public PendingFragment() {
 	}
 
@@ -94,6 +98,8 @@ public class PendingFragment extends Fragment implements OnItemClickListener {
 		severityID = listItemInfo.get(position).getCaseSeverityID();
 		commentTitle = listItemInfo.get(position).getCommentTitle();
 		comments = listItemInfo.get(position).getComments();
+		userID = listItemInfo.get(position).getUserID();
+
 	}
 
 	private class ListCasesAsyncCallWS extends AsyncTask<String, Void, Integer> {
@@ -180,6 +186,10 @@ public class PendingFragment extends Fragment implements OnItemClickListener {
 		spinnerArrayAdapter1.setDropDownViewResource( android.R.layout.simple_spinner_dropdown_item );
 		spinnerSeverity.setAdapter(spinnerArrayAdapter1);
 
+
+
+
+
 		final EditText etCommentTitle=(EditText) promptsView.findViewById(R.id.etSubject);
 		final EditText etComments=(EditText) promptsView.findViewById(R.id.etResp);
 
@@ -195,12 +205,22 @@ public class PendingFragment extends Fragment implements OnItemClickListener {
 				.setPositiveButton("Approve",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
-
+								if (severityID == 0 || commentTypeID == 0
+										|| areaID == 0 || etCommentTitle.getText().toString().isEmpty()
+										|| etComments.getText().toString().isEmpty()) {
+									Toast.makeText(mContext, "All information must be filled in.", Toast.LENGTH_LONG).show();
+								} else {
+									InsertCase ic = new InsertCase(mContext, userID, spm.getInt("CompanyID", 0), severityID, etCommentTitle.getText().toString(),
+											etComments.getText().toString(), commentTypeID, areaID, "Temp"+tempCommentID);
+									ic.execute();
+								}
 							}
 						})
 				.setNeutralButton("Delete",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
+								DeletePC dpc = new DeletePC(mContext, tempCommentID);
+								dpc.execute();
 								dialog.cancel();
 
 							}
@@ -221,6 +241,7 @@ public class PendingFragment extends Fragment implements OnItemClickListener {
 
 		AlertDialog alertDialog = alertDialogBuilder.create();
 		alertDialog.show();
+		hasloaded = true;
 	}
 
 
@@ -469,6 +490,163 @@ public class PendingFragment extends Fragment implements OnItemClickListener {
 		}
 
 	}
+
+
+
+	public class InsertCase extends AsyncTask<String, Void, String> {
+
+		Context context;
+		String response;
+		int userID;
+		int companyID;
+		int severityID;
+		int commentTypeID;
+		String commentTitle;
+		String comments;
+		String tempID;
+		int reasonID;
+
+
+		public InsertCase(Context mContext, int mUserID, int mCompanyID, int mSeverity, String mCommentTitle, String mComments, int mCommentTypeID, int mReason, String mTempID) {
+			this.context = mContext;
+			this.userID = mUserID;
+			this.severityID = mSeverity;
+			this.commentTitle = mCommentTitle;
+			this.comments = mComments;
+			this.reasonID = mReason;
+			this.companyID = mCompanyID;
+			this.commentTypeID = mCommentTypeID;
+			this.tempID = mTempID;
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			if (!isCancelled()) {
+				CustomProgressBar.showProgressBar(context, false);
+			}
+		}
+
+		@Override
+		protected String doInBackground(String... params) {
+
+			JSONObject json = new JSONObject();
+			try {
+				json.put("UserID", String.valueOf(userID));
+				json.put("CompanyID", String.valueOf(companyID));
+				json.put("Comments", comments);
+				json.put("CaseSeverityID", String.valueOf(severityID));
+				json.put("CommentTitle", commentTitle);
+				json.put("CaseReasonID", String.valueOf(reasonID));
+				json.put("CommentTypeID", String.valueOf(commentTypeID));
+				json.put("TempCommentID", tempID);
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+
+			HttpClient client = new HttpClient();
+			try {
+				if (spm.getBoolean("CaseApproval", false)) {
+					response = client.post(Constants.URL + "/api/PendingCase/Post", json.toString());
+				} else {
+					response = client.post(Constants.URL + "/api/Case/PostCase", json.toString());
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				if (e instanceof SocketException
+						|| e instanceof UnknownHostException
+						|| e instanceof SocketTimeoutException
+						|| e instanceof ConnectTimeoutException
+						|| e instanceof ClientProtocolException) {
+					response = Constants.ERROR_CONNECTION;
+
+				} else {
+					response = Constants.DEFAULT_ERROR_MSG;
+				}
+			}
+
+			return response;
+		}
+
+
+		@Override
+		protected void onPostExecute(String result) {
+			if (result.contains("Error")) {
+				Utilities.ShowDialog("Error", result, context);
+			} else {
+				if (spm.getBoolean("CaseApproval", false)) {
+					Utilities.ShowDialog("Case Submitted", "Case Successfully Submitted for Approval", context);
+				} else {
+					Utilities.ShowDialog("Case Submitted", "Case Successfully Submitted", context);
+				}
+
+
+
+				CustomProgressBar.hideProgressBar();
+
+				ListCasesAsyncCallWS as = new ListCasesAsyncCallWS(getActivity(), spm.getInt("ClientID",0));
+				as.execute();
+			}
+		}
+	}
+
+
+	public class DeletePC extends AsyncTask<String, Void, String> {
+
+		Context context;
+		String pendingCommentID;
+		String response;
+
+		public DeletePC(Context mContext, String mPendingID){
+			this.context = mContext;
+			this.pendingCommentID = mPendingID;
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			if(!isCancelled()){
+				CustomProgressBar.showProgressBar(context, false);
+			}
+		}
+
+		@Override
+		protected String doInBackground(String... params) {
+			HttpClient client = new HttpClient();
+			try {
+				if (!isCancelled()) {
+					response = client.deleteCompany(Constants.URL + "/api/PendingCase/Delete?id=" + pendingCommentID );
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				if (e instanceof SocketException
+						|| e instanceof UnknownHostException
+						|| e instanceof SocketTimeoutException
+						|| e instanceof ConnectTimeoutException
+						|| e instanceof ClientProtocolException) {
+
+					return response;
+				}
+
+				return response;
+			}
+
+			return "Success";
+		}
+
+		@Override
+		protected void onPostExecute(String result) {
+			CustomProgressBar.hideProgressBar();
+			if (result.equals("Success")) {
+				ListCasesAsyncCallWS as = new ListCasesAsyncCallWS(getActivity(), spm.getInt("ClientID",0));
+				as.execute();
+			} else {
+				Utilities.ShowDialog("Error", result, context);
+			}
+		}
+	}
+
+
 
 
 }

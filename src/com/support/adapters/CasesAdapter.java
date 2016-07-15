@@ -137,7 +137,7 @@ public class CasesAdapter extends ArrayAdapter<SupportCases> {
 			public void onClick(View v) {
                 caseID = Integer.valueOf(item.getCommentID());
 				CasesFragment cf = new CasesFragment();
-                cf.showPopUpForSupportUsers(getContext());
+                cf.showPopUpForSupportUsers(getContext(), item.getSupportUserID());
 
 			}
 		});
@@ -221,7 +221,7 @@ public class CasesAdapter extends ArrayAdapter<SupportCases> {
 						i++;
 				}
 					CasesFragment cf = new CasesFragment();
-					cf.showPopUpForStatus(getContext());
+					cf.showPopUpForStatus(getContext(), item.getCaseStatusID());
 			}
 		});
 			

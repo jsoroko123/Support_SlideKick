@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.example.appolissupport.R;
 import com.support.objects.SupportUser;
-import com.support.objects.UserDrop;
 
 import java.util.ArrayList;
 
@@ -18,11 +17,14 @@ import java.util.ArrayList;
 public class SupportUserAdapter extends ArrayAdapter<SupportUser> {
     private Context context;
     private ArrayList<SupportUser> listItemInfos;
+    private int userID;
 
-    public SupportUserAdapter(Context context, ArrayList<SupportUser> list) {
+
+    public SupportUserAdapter(Context context, ArrayList<SupportUser> list, int mUserID) {
         super(context, R.layout.details_item2);
         this.context = context;
         this.listItemInfos = list;
+        this.userID = mUserID;
     }
 
     @Override
@@ -57,6 +59,7 @@ public class SupportUserAdapter extends ArrayAdapter<SupportUser> {
     @SuppressLint("InflateParams")
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
+
         ItemDetailHolder itemDetailHolder;
         final SupportUser item = getItem(position);
         if (null == convertView) {
@@ -71,6 +74,11 @@ public class SupportUserAdapter extends ArrayAdapter<SupportUser> {
 
         itemDetailHolder.tvUserName.setText(item.getUsername());
 
+        if(item.getUserID() == userID){
+            convertView.setBackgroundColor(context.getResources().getColor(R.color.Blue19));
+        } else {
+            convertView.setBackgroundColor(context.getResources().getColor(R.color.Gray22));
+        }
 
         return convertView;
     }

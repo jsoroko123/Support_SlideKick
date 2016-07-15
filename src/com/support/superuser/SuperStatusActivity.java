@@ -109,6 +109,7 @@ public class SuperStatusActivity extends Activity implements View.OnClickListene
                 if(ClientMap) {
                     if(listStatuses.size() > 0) {
                         SuperStatusAdapter.etDept.clearFocus();
+                        SuperStatusAdapter.etDept.requestFocus();
                         ClientStatus s = new ClientStatus(this, copy, listStatuses, true);
                         s.execute();
                     } else {
@@ -156,6 +157,7 @@ public class SuperStatusActivity extends Activity implements View.OnClickListene
         if(ClientMap) {
             if(listStatuses.size() > 0) {
                 SuperStatusAdapter.etDept.clearFocus();
+                SuperStatusAdapter.etDept.requestFocus();
                 ClientStatus s = new ClientStatus(this, copy, listStatuses, true);
                 s.execute();
             } else {
@@ -165,6 +167,7 @@ public class SuperStatusActivity extends Activity implements View.OnClickListene
         } else {
             if(listSupportStatuses.size() > 0) {
                 SuperMapStatusAdapter.etDept.clearFocus();
+                SuperStatusAdapter.etDept.requestFocus();
                 Status s = new Status(this, copy2, listSupportStatuses, true);
                 s.execute();
             } else {

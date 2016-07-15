@@ -130,7 +130,7 @@ public class MainActivity extends Activity implements FragmentManager.OnBackStac
 		CompanyStatuses cs = new CompanyStatuses(this, false);
 		cs.execute(String.valueOf(spm2.getInt("CompanyID", 0)), String.valueOf(spm2.getBoolean("IsSupport", false)));
 
-		ClientNameDrop cd = new ClientNameDrop(this);
+		ClientNameDrop cd = new ClientNameDrop(this, false);
 		cd.execute(String.valueOf(spm2.getInt("CompanyID", 0)), "true");
 
 		Intent intent = getIntent();
@@ -614,7 +614,7 @@ public class MainActivity extends Activity implements FragmentManager.OnBackStac
 									clientID = spm2.getInt("ClientID", 0);
 								}
 								CasesFragment cs = new CasesFragment();
-								cs.refreshData(MainActivity.this,spm2.getInt("CaseStatusID", 0), clientID, spm2.getInt("TopTypeID", 0), spm2.getInt("CompanyID", 0), "", "1893-01-01", "2456-07-31", 0, false, spm2.getBoolean("IsSupport", false));
+								cs.refreshData(MainActivity.this,spm2.getInt("CaseStatusID", 0), clientID, spm2.getInt("CaseTypeID", 0), spm2.getInt("CompanyID", 0), "", "1893-01-01", "2456-07-31", 0, false, spm2.getBoolean("IsSupport", false));
 								CasesFragment.casesAdapter.notifyDataSetChanged();
 							}
 						});
@@ -861,13 +861,15 @@ public class MainActivity extends Activity implements FragmentManager.OnBackStac
 		protected void onPostExecute(Integer result) {
 			if (result == 1) {
 				Utilities.ShowDialog("Network Error", Constants.ERROR_CONNECTION, context);
+				CustomProgressBar.hideProgressBar();
 			} else if (result == 2) {
 				Utilities.ShowDialog("Error", Constants.DEFAULT_ERROR_MSG, context);
+				CustomProgressBar.hideProgressBar();
 			} else {
 				if(ShowPopup) {
-					showPopUpForFilter(context);
+					ClientNameDrop cd = new ClientNameDrop(context, true);
+					cd.execute(String.valueOf(spm2.getInt("CompanyID", 0)), "true");
 				}
-				CustomProgressBar.hideProgressBar();
 			}
 		}
 	}
@@ -876,9 +878,11 @@ public class MainActivity extends Activity implements FragmentManager.OnBackStac
 
 		Context context;
 		String response;
+		boolean showPop;
 
-		public ClientNameDrop(Context mContext){
+		public ClientNameDrop(Context mContext, boolean showPopUp){
 			this.context = mContext;
+			this.showPop = showPopUp;
 		}
 
 		@Override
@@ -912,8 +916,14 @@ public class MainActivity extends Activity implements FragmentManager.OnBackStac
 		protected void onPostExecute(Integer result) {
 			if (result == 1) {
 				Utilities.ShowDialog("Network Error", Constants.ERROR_CONNECTION, context);
+				CustomProgressBar.hideProgressBar();
 			} else if (result == 2) {
 				Utilities.ShowDialog("Error", Constants.DEFAULT_ERROR_MSG, context);
+				CustomProgressBar.hideProgressBar();
+			} else if(showPop) {
+				showPopUpForFilter(context);
+				CustomProgressBar.hideProgressBar();
+
 			}
 		}
 
@@ -944,7 +954,7 @@ public class MainActivity extends Activity implements FragmentManager.OnBackStac
 		protected Integer doInBackground(String... params) {
 			HttpClient client = new HttpClient();
 			try {
-				response = client.get(Constants.URL + "/api/Case/GetCaseTypes?CompanyID=" + params[0] + "&IncludeAll=False&UserID="
+				response = client.get(Constants.URL + "/api/Case/GetCaseTypes?CompanyID=" + params[0] + "&IncludeAll=True&UserID="
 																								+ params[1]);
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -960,6 +970,8 @@ public class MainActivity extends Activity implements FragmentManager.OnBackStac
 				}
 			}
 			caseTypes = DataParser.getCaseTypes(response);
+			CaseType ct = new CaseType(0,"All Departments");
+			caseTypes.set(0,ct);
 			return 0;
 		}
 
@@ -968,8 +980,10 @@ public class MainActivity extends Activity implements FragmentManager.OnBackStac
 		protected void onPostExecute(Integer result) {
 			if (result == 1) {
 				Utilities.ShowDialog("Network Error", Constants.ERROR_CONNECTION, context);
+				CustomProgressBar.hideProgressBar();
 			} else if (result == 2) {
 				Utilities.ShowDialog("Error", Constants.DEFAULT_ERROR_MSG, context);
+				CustomProgressBar.hideProgressBar();
 			} else {
 				CompanyStatuses cs = new CompanyStatuses(context, true);
 				cs.execute(String.valueOf(spm2.getInt("CompanyID", 0)), String.valueOf(spm2.getBoolean("IsSupport", false)));

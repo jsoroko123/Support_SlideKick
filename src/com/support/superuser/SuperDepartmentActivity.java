@@ -81,6 +81,7 @@ public class SuperDepartmentActivity extends Activity{
             case android.R.id.home:
                 if (listDepartments.size() > 0) {
                     SuperDepartmentAdapter.etDept.clearFocus();
+                    SuperDepartmentAdapter.etDept.requestFocus();
                     Department s = new Department(this, copy, listDepartments);
                     s.execute();
                 } else {
@@ -98,6 +99,7 @@ public class SuperDepartmentActivity extends Activity{
     public void onBackPressed() {
         if (listDepartments.size() > 0) {
             SuperDepartmentAdapter.etDept.clearFocus();
+            SuperDepartmentAdapter.etDept.requestFocus();
             Department s = new Department(this, copy, listDepartments);
             s.execute();
         } else {

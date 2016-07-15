@@ -104,7 +104,6 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 		lvSupportCasesList.setOnItemClickListener(this);
 		swipeList = lvSupportCasesList.getRefreshableView();
 		noCases = (TextView) rootView.findViewById(R.id.tvNoCases);
-
 		setListData();
 
 		lvSupportCasesList
@@ -223,17 +222,18 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 	}
 
 
-	public void showPopUpForStatus(final Context mContext) {
+	public void showPopUpForStatus(final Context mContext, final int mCaseStatusID) {
 		LayoutInflater li = LayoutInflater.from(mContext);
 		View promptsView = li.inflate(R.layout.dialogscanner3, null);
 		caseStatusID = 0;
 
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+
 				mContext);
 
 		alertDialogBuilder.setTitle("Update Case Status");
 		final ListView lv=(ListView)promptsView.findViewById(R.id.list_status);
-		final StatusListAdapter adapter = new StatusListAdapter(mContext, MainActivity.statuses);
+		final StatusListAdapter adapter = new StatusListAdapter(mContext, MainActivity.statuses, mCaseStatusID);
 		lv.setAdapter(adapter);
 
 		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -257,9 +257,12 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 									final UpdateCaseStatus up = new UpdateCaseStatus(mContext, CasesAdapter.caseID, caseStatusID);
 									up.execute();
 								} else {
-									Toast.makeText(mContext,"Status was not selected.", Toast.LENGTH_LONG).show();
+									if(mCaseStatusID != 0){
+										Toast.makeText(mContext,"Case already set to this status.", Toast.LENGTH_LONG).show();
+									} else {
+										Toast.makeText(mContext,"Status was not selected.", Toast.LENGTH_LONG).show();
+									}
 								}
-
 							}
 						})
 
@@ -276,21 +279,18 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 				alertDialog.show();
 	}
 
-	public void showPopUpForSupportUsers(final Context mContext) {
-		LayoutInflater li = LayoutInflater.from(mContext);
+	public void showPopUpForSupportUsers(final Context mContext, final int sUserID) {
+			LayoutInflater li = LayoutInflater.from(mContext);
 		View promptsView = li.inflate(R.layout.dialogscanner4, null);
-		SupportUserID = 0;
+		SupportUserID = -1;
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
 				mContext);
 
 		alertDialogBuilder.setTitle("Assign Support User");
 
 		final ListView lv=(ListView)promptsView.findViewById(R.id.list_users);
-		final SupportUserAdapter adapter = new SupportUserAdapter(mContext, listItemSupportUsers);
+		final SupportUserAdapter adapter = new SupportUserAdapter(mContext, listItemSupportUsers, sUserID);
 		lv.setAdapter(adapter);
-
-
-
 		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 			@Override
@@ -308,14 +308,16 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 				.setPositiveButton("OK",
 						new DialogInterface.OnClickListener() {
 							public void onClick(DialogInterface dialog, int id) {
-								if (SupportUserID != 0) {
+								if (SupportUserID != -1) {
 									final UpdateCaseAssignment up = new UpdateCaseAssignment(mContext, CasesAdapter.caseID, SupportUserID);
 									up.execute();
 
 								} else {
-									Toast.makeText(mContext, " Please select user to assign to case.", Toast.LENGTH_LONG).show();
+									if(sUserID != -1){
+										Toast.makeText(mContext, "User is already assigned to Case: "+CasesAdapter.caseID+".", Toast.LENGTH_LONG).show();
+									} else
+										Toast.makeText(mContext, " Please select user to assign to case.", Toast.LENGTH_LONG).show();
 								}
-
 							}
 						})
 
@@ -332,9 +334,7 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 		alertDialog.show();
 	}
 
-
 	public void showPopUpForPhoneNumbers(final Context mContext, ArrayList<String> phones, String contact) {
-
 		LayoutInflater li = LayoutInflater.from(mContext);
 		View promptsView = li.inflate(R.layout.dialogscanner5, null);
 		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
@@ -452,6 +452,7 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 						+ "&BeginDate=" + BeginDate + "&EndDate=" + EndDate + "&UserID=" + String.valueOf(spm.getInt("UserID",0)));
 			} catch (Exception e) {
 				e.printStackTrace();
+				CustomProgressBar.hideProgressBar();
 				if (e instanceof SocketException
 						|| e instanceof UnknownHostException
 						|| e instanceof SocketTimeoutException
@@ -611,6 +612,8 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 				}
 			}
 			listItemSupportUsers = DataParser.getSupportUserDrop(response);
+			SupportUser su = new SupportUser(0, "Unassigned");
+			listItemSupportUsers.add(0, su);
 			return 0;
 		}
 
@@ -1068,9 +1071,6 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 		}
 	}
 
-
-
-
 	public void CheckSharedPrefs(){
 		if(!spm.getString("Search", "").isEmpty()){
 			search = spm.getString("Search", "");
@@ -1097,7 +1097,7 @@ public class CasesFragment extends Fragment implements OnClickListener, OnItemCl
 		if(spm.getInt("Type", 0) != 0) {
 			caseTypeID = spm.getInt("Type", 0);
 		} else {
-			caseTypeID = spm.getInt("TopTypeID", 0);
+			caseTypeID = 0;
 		}
 
 		if (spm.getBoolean("MyCases", false)) {

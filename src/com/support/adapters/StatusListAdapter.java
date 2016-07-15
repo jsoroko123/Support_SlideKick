@@ -19,11 +19,13 @@ import java.util.ArrayList;
 public class StatusListAdapter extends ArrayAdapter<CaseStatus> {
     private Context context;
     private ArrayList<CaseStatus> listItemInfos;
+    private int caseStatusID;
 
-    public StatusListAdapter(Context context, ArrayList<CaseStatus> list) {
+    public StatusListAdapter(Context context, ArrayList<CaseStatus> list, int mCaseStatusID) {
         super(context, R.layout.details_item2);
         this.context = context;
         this.listItemInfos = list;
+        this.caseStatusID = mCaseStatusID;
     }
 
     @Override
@@ -69,6 +71,12 @@ public class StatusListAdapter extends ArrayAdapter<CaseStatus> {
         } else {
             itemDetailHolder = (ItemDetailHolder) convertView.getTag();
         }
+
+            if (item.getCaseStatusID() == caseStatusID) {
+                convertView.setBackgroundColor(context.getResources().getColor(R.color.Blue19));
+            } else {
+                convertView.setBackgroundColor(context.getResources().getColor(R.color.Gray22));
+            }
 
         itemDetailHolder.tvUserName.setText(item.getCaseStatusDesc());
 

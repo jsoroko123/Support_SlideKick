@@ -7,6 +7,7 @@ public class PendingCases implements Serializable {
 
 	private int PendingCommentID;
 	private String Username;
+	private int UserID;
 	private String CommentTitle;
 	private String Comments;
 	private int CaseSeverityID;
@@ -21,7 +22,7 @@ public class PendingCases implements Serializable {
 
 	public PendingCases(int pendingCommentID, String username, String commentTitle, String comments, int caseSeverityID,
 							String caseSeverityDesc, int caseReasonID, String reasonDesc, int commentTypeID, String commentTypeDesc,
-								String dateCreated, boolean hasAttachment, String color) {
+								String dateCreated, boolean hasAttachment, String color, int mUserID) {
 		PendingCommentID = pendingCommentID;
 		Username = username;
 		CommentTitle = commentTitle;
@@ -35,6 +36,7 @@ public class PendingCases implements Serializable {
 		DateCreated = dateCreated;
 		HasAttachment = hasAttachment;
 		Color = color;
+		UserID = mUserID;
 	}
 
 	public int getPendingCommentID() {
@@ -140,6 +142,14 @@ public class PendingCases implements Serializable {
 
 	public void setCommentTypeDesc(String commentTypeDesc) {
 		CommentTypeDesc = commentTypeDesc;
+	}
+
+	public int getUserID() {
+		return UserID;
+	}
+
+	public void setUserID(int userID) {
+		UserID = userID;
 	}
 }
 

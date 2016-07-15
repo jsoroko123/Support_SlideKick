@@ -654,7 +654,7 @@ public class SubmitFragment extends Fragment implements OnClickListener, OnItemC
                 Utilities.ShowDialog("Error", result, context);
             } else {
                 if (spm.getBoolean("CaseApproval", false)) {
-                    Utilities.ShowDialog("Case Submitted", "Case Successfully Submitted for Approval", context);
+                    Utilities.ShowDialog("Approval Required", "Case Successfully Submitted for Approval", context);
                 } else {
                     Utilities.ShowDialog("Case Submitted", "Case Successfully Submitted", context);
                 }

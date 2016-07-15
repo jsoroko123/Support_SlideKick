@@ -296,7 +296,19 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 		b.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				if(et1.getText().toString().isEmpty() || et2.getText().toString().isEmpty() || et3.getText().toString().isEmpty() ||
+				if(MainActivity.isSupport) {
+					if (et1.getText().toString().isEmpty() || et2.getText().toString().isEmpty() || et3.getText().toString().isEmpty() ||
+							et4.getText().toString().isEmpty() || et5.getText().toString().isEmpty() || et6.getText().toString().isEmpty() ||
+							et7.getText().toString().isEmpty() || et8.getText().toString().isEmpty()) {
+						Utilities.ShowDialog("Warning!", "Please fill in required fields.", getActivity());
+					} else {
+						InsertNewClient inc = new InsertNewClient(getActivity(), NEWCLIENTID, et1.getText().toString(), spm.getInt("CompanyID", 0), et2.getText().toString(),
+								et3.getText().toString(), et4.getText().toString(), et5.getText().toString(), et6.getText().toString(),
+								et7.getText().toString());
+						inc.execute();
+						alertDialog.dismiss();
+					}
+				} else if (et1.getText().toString().isEmpty() || et2.getText().toString().isEmpty() || et3.getText().toString().isEmpty() ||
 						et4.getText().toString().isEmpty() || et5.getText().toString().isEmpty() || et6.getText().toString().isEmpty() ||
 						et7.getText().toString().isEmpty() || et8.getText().toString().isEmpty()) {
 					Utilities.ShowDialog("Warning!", "Please fill in required fields.", getActivity());
@@ -307,6 +319,7 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 					inc.execute();
 					alertDialog.dismiss();
 				}
+
 
 			}
 		});
@@ -456,7 +469,7 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 				int newClient = 0;
 				if ((et1.getText().toString().isEmpty() || et2.getText().toString().isEmpty() || et3.getText().toString().isEmpty() ||
 						et4.getText().toString().isEmpty() || et5.getText().toString().isEmpty() || et6.getText().toString().isEmpty() ||
-						et7.getText().toString().isEmpty() || et8.getText().toString().isEmpty()) || !clientSpinner.contains("Select Client")) {
+						et7.getText().toString().isEmpty())) {
 					Utilities.ShowDialog("Warning!", "Please fill in required fields.", getActivity());
 
 				} else {
@@ -491,11 +504,6 @@ public class ClientsFragment extends Fragment implements OnItemClickListener, On
 						incu.execute();
 						alertDialog.dismiss();
 					}
-
-
-
-
-
 
 					ra = new RotateAnimation(ROTATE_TO, ROTATE_FROM, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
 					ra.setDuration(1000);
